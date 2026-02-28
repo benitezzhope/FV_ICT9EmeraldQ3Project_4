@@ -26,6 +26,17 @@
 			opacity: 40%;
         }
 
+         .box {
+            width: 60%;
+            margin: 50px auto;
+            padding: 40px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);   
+    }
 
     </style>
 
@@ -55,16 +66,15 @@
             </div>
         </div>
     </nav>
-
-<div class="container" style="width: 800px; height: 700px; background-color: rgba(255, 255, 255, 0.614); opacity: 90%; border-radius: 20px; margin-bottom: 40px; margin-top: 40px;"><div class="col">
-<h1 style="padding-top: 30px; text-align: center; color: rgb(35, 35, 86);"><b>SafeHaste Fare Guide</b></h1>
-<p style="color: #797979; text-align: center;">Please take note that our service is available to <b>MRT Line 3 only.</b></p>
+    <div class="box">
+  <div class="container-fluid" style="text-align: center; border-radius: 20px; padding-left: 50px; padding-top: 30px; padding-right: 50px;"><h1 style="padding-top: 30px; text-align: center; color: rgb(64, 140, 255);"><b>SafeHaste Fare Guide</b></h1>
+<p style="color: #ffffff; text-align: center;">Please take note that our service is available to <b>MRT Line 3 only.</b></p>
 
 <img src="mrt line 3.jpg" style="width: 180px; height: 170px; margin-right: auto; margin-left: auto; display: block;">
 
 <br><br>
 
-<h3 style="color: rgb(35, 35, 86); text-align: center;">Pick-up Location:</h3> <!--Uses a dropdown feature instead of an input feature-->
+<h3 style="color:  rgb(64, 140, 255); text-align: center;">Pick-up Location:</h3> <!--Uses a dropdown feature instead of an input feature-->
 <select class="form-control mb-3" id="Pickup">
     <option value="">Select Station</option>
     <option value="0">North Avenue</option>
@@ -82,7 +92,7 @@
     <option value="12">Taft Avenue</option>
 </select>
 
-<h3 style="color: rgb(35, 35, 86); text-align: center;">Drop-off Location:</h3>
+<h3 style="color:  rgb(64, 140, 255); text-align: center;">Drop-off Location:</h3>
 <select class="form-control mb-3" id="Dropoff">
     <option value="">Select Station</option>
     <option value="0">North Avenue</option>
@@ -101,7 +111,7 @@
 </select>
 
 <details>
-    <summary style="color: rgb(87, 97, 97); text-align: center;">
+    <summary style="color: rgb(255, 255, 255); text-align: center;">
         <i>Learn more about our Discounted Rate</i>
     </summary>
 
@@ -116,7 +126,7 @@
 <div style="text-align: center;">
 
 <button id="Regular" name="Regular" type="button" style="border-radius: 20px; background-color: rgb(167, 167, 167); font-size: 20px; color: white;" class="btn" onclick="calculateFare('regular')">Regular Rate</button>
-<button id="Discount" name="Discount" type="button" style="border-radius: 20px; background-color: rgb(35, 35, 86);font-size: 20px; color: white;" class="btn" onclick="calculateFare('discount')">Discounted Rate</button>
+<button id="Discount" name="Discount" type="button" style="border-radius: 20px; background-color:  rgb(64, 140, 255);font-size: 20px; color: white;" class="btn" onclick="calculateFare('discount')">Discounted Rate</button>
 
 </div>
 <h3 id="DisplayAns"style="margin-top:20px; color:rgb(35,35,86); text-align: center;"></h3>
@@ -169,4 +179,5 @@ function calculateFare(type) {
 </body>
 
 </html>
+
 
