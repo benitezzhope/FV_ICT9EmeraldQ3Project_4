@@ -3,128 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fare Guide         background-image: url(flowers.gif);
-        background-size: 100% 120%;
-	    background-repeat: no repeat;
-    	background-attachment: fixed;</title>
+    <title>Q3 Project</title>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css " rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-     
 
-</head>
-<body>
-    <style>
-  body{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-           background-image: url(backgroundaaaaa.jpg);
-        background-size: 100% 120%;
-	    background-repeat: no repeat;
-    	background-attachment: fixed;
-  }
+  <style>
+    body {
+      background-image: url(https://static.vecteezy.com/system/resources/previews/025/269/246/non_2x/global-network-connection-world-map-point-and-line-composition-concept-of-global-business-illustration-vector.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
-  #sigma{
-    list-style: none;
-  }
-  #sigma li::before{
+    #sigma{
+      list-style: none;
+    }
+    
+    #sigma li::before{
      content: " 🛵 "
-  }
+    }
 
-.footer {
-			position: fixed;
-			left: 0;
-			bottom: 0;
-			width: 100%;
-			background-color:rgb(3, 33, 57);
-			text-align: center;
-			padding: 1px 20px;
-			color: #FDEEF2;
-			opacity: 40%;
+    .footer {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color:rgb(3, 33, 57);
+      text-align: center;
+      padding: 1px 20px;
+      color: #FDEEF2;
+      opacity: 40%;
+    
+    }
 
-}
-</style>
+    .d {
+      color: #FDEEF2;
+    }
 
-<div class="footer">
-	<p>9-EMERALD | Cruz, Ramos, Benitez | source.com</p>
-</div>
+  </style>
+</head>
 
- <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(209, 245, 255);">
-  <div class="container-fluid">
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:  rgba(255, 255, 255, 0);">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav gap-4" style="margin-left: 30px; margin-top: 30px;">
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+          <li class="nav-item"><a class="nav-link" href="page1.html" style="color: rgb(255, 255,  255);"><b>Home</b></a></li>
 
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav ms-auto gap-3">
-        <li class="nav-item"><a class="nav-link" href="FairGuideHome.html" style="color: (71, 147, 164);"><b>Home</b></a></li>
-        <li class="nav-item"><a class="nav-link" href="" style="color: (71, 147, 164);"><b>Fair Matrix</b></a></li>
-        <li class="nav-item"><a class="nav-link" href="" style="color: (71, 147, 164);"><b>Schedule</b></a></li>
-        <li class="nav-item"><a class="nav-link" href="" style="color: (71, 147, 164);"><b>Help</b></a></li>
-        <li class="nav-item"><a class="nav-link" href="" style="color: (71, 147, 164);"><b>BOOK NOW</b></a></li>
-        <li class="nav-item"><a class="nav-link" href="" style="background-color: rgb(71, 147, 164); color: white; border-radius: 30px;"><b>Create Account</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="page2.html" style="color: rgb(255, 255, 255);"><b>Fare Matrix</b></a></li>
+
+          <li class="nav-item"><a class="nav-link" href="page3.html" style="color: rgb(255, 255, 255);"><b>Schedule</b></a></li>
+
+          <li class="nav-item"><a class="nav-link" href="page4.html" style="color: rgb(255, 255, 255);"><b>Help</b></a></li>
+
+          <li class="nav-item"><a class="nav-link" href="page5.html" style="color: rgb(255, 255, 255);"><b>BOOK NOW</b></a></li>
+
+         <li class="nav-item"><a class="nav-link" href="page6.html" style="background-color: rgb(3, 59, 71); color: white; border-radius: 30px;"><b>Create Account</b></a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="container-fluid" style="text-align: center; border-radius: 20px; padding-left: 50px; padding-top: 60px; padding-right: 50px;">
+    <h1 style="text-align: center; color: rgb(255, 255, 255);"><b>How to Book?</b></h1>
+
+    <details class="onclick" style=" font-size: 15px; color: white; text-align: center;">
+      <summary>Click here!</summary>
+        <p id="instructions"></p>
+    </details>
+  </div>
+
+  <br><br>
+
+  <div class="container-fluid" style="background-color: rgba(255, 255, 255, 0.176); border-radius: 20px; width: 700px;">
+    <h1 style="text-align: center; color: rgb(255, 255, 255);"><b>Passenger Tips & Reminders</b></h1>
+
+    <br><br>
+
+    <div class="row">
+      <div class="col">
+        <ul class="" id="sigma" style="text-align: left;">
+
+       <li style="font-size: large; color: rgb(255, 255, 255);"><b>Gear Up</b></li>
+       <d style="color: white;">Use a certified helmet (full-face, modular, or open-face with visor).</d>
+
+        <br><br>
+
+        <li style="font-size: large; color: rgb(255, 255, 255);"><b>Positioning</b></li>
+        <d style="color: white;">Mount from the left side, keep your feet on the footpegs, and avoid wiggling or shifting weight unexpectedly.</d>
+
+        <br><br>
+
+        <li style="font-size: large; color: rgb(255, 255, 255);"><b>Active Passenger</b></li>
+        <d style="color: white;">Follow the rider's movements during turns and leans to maintain balance.</d>
+
+        <br><br>
+
+        <li style="font-size: large; color: rgb(255, 255, 255);"><b>Communication</b></li>
+        <d style="color: white;">Tap the rider's shoulder to communicate, ask to slow down if necessary, or discuss the route   before starting.</d>
+
+        <br><br>
+
+        <li style="font-size: large; color: rgb(255, 255, 255);"><b>Health Protocols</b></li>
+        <d style="color: white;">Sanitize hands and wear masks as required by safety guidelines.</d>
+
+        <br><br>
+
+        <li style="font-size: large; color: rgb(255, 255, 255);"><b>Be Prepared</b></li>
+        <d style="color: white;">Inform friends or family of your ride details.</d>
+
+        <br><br>
+
+        <li style="font-size: large; color: rgb(255, 255, 255);"><b>Weight Check</b></li>
+        <d style="color: white;"> Ensure the rider is comfortable with your weight to handle the bike safely.</d>
+
+       <br><br>
+
+        <li style="font-size: large; color: rgb(255, 255, 255);"><b>Weather Prep</b></li>
+        <d style="color: white;">Be aware of weather conditions and prepare appropriate gear. </d>
+
+      </div>
+    </div>
     </ul>
-</div>
-</div>
-</nav>
+  </div>
 
-<br><br>
-
-<div class="row">
-<div class="container-fluid" style="width: 700px; height: 700px; background-color: rgb(222, 248, 246); text-align: center; border-radius: 20px;">
-<h1 style="text-align: center; padding-top: 60px; color: rgb(70, 142, 142);"><b>How to Book?</b></h1>
-<h1>NEXT TIME NATO</h1>
-</div>
-
-<div class="container-fluid" style="width: 700px; height: 900px; background-color: rgb(222, 248, 246); border-radius: 20px;">
-<h1 style="text-align: center; padding-top: 60px; color: rgb(70, 142, 142);"><b>Passenger Tips & Reminders</b></h1>
-<ul class="sigma" id="sigma">
-<br><br>
-<li style="font-size: large; color: rgb(70, 142, 142);"><b>Gear Up</b></li>
-<d>Use a certified helmet (full-face, modular, or open-face with visor).</d>
-
-<br><br>
-
-<li style="font-size: large; color: rgb(70, 142, 142);"><b>Positioning</b></li>
-<d>Mount from the left side, keep your feet on the footpegs, and avoid wiggling or shifting weight unexpectedly.</d>
-
-<br><br>
-
-<li style="font-size: large; color: rgb(70, 142, 142);"><b>Active Passenger</b></li>
-<d>Follow the rider's movements during turns and leans to maintain balance.</d>
-
-<br><br>
-
-<li style="font-size: large; color: rgb(70, 142, 142);"><b>Communication</b></li>
-<d>Tap the rider's shoulder to communicate, ask to slow down if necessary, or discuss the route before starting.</d>
-
-<br><br>
-
-<li style="font-size: large; color: rgb(70, 142, 142);"><b>Health Protocols</b></li>
-<d>Sanitize hands and wear masks as required by safety guidelines.</d>
-
-<br><br>
-
-<li style="font-size: large; color: rgb(70, 142, 142);"><b>Be Prepared</b></li>
-<d>Inform friends or family of your ride details.</d>
-
-<br><br>
-
-<li style="font-size: large; color: rgb(70, 142, 142);"><b>Weight Check</b></li>
-<d> Ensure the rider is comfortable with your weight to handle the bike safely.</d>
-
-<br><br>
-
-<li style="font-size: large; color: rgb(70, 142, 142);"><b>Weather Prep</b></li>
-<d>Be aware of weather conditions and prepare appropriate gear. </d>
-
-<!--Source: Top Gear Philippines-->
-<br><br>
-
-</ul>
-<br>
+   <script>
+    document.getElementById("instructions").innerHTML = "Register in our official SafeHaste website and enter where you have to go.";
+  </script>
 
 </div>
-</div>
+
+  <div class="footer">
+	  <p>9-EMERALD | Benitez, Cruz, Ramos, | source.com</p>
+  </div>
+
 
 </body>
 </html>
+
+<!--Source: Top Gear Philippines-->
