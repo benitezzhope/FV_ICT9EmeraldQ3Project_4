@@ -16,15 +16,16 @@
         }
 
       .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color:rgb(3, 33, 57);
-            padding: 1px 20px;
-            color: #FDEEF2;
-            opacity: 40%;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color:rgb(3, 33, 57);
+			text-align: center;
+			padding: 1px 20px;
+			color: #FDEEF2;
+			opacity: 40%;
         }
+
 
     </style>
 
@@ -55,13 +56,15 @@
         </div>
     </nav>
 
-<div class="container" style="width: 800px; height: 700px; background-color: rgba(255, 255, 255, 0.861); opacity: 90%; border-radius: 20px; margin-bottom: 40px; margin-top: 40px;"><div class="col">
+<div class="container" style="width: 800px; height: 700px; background-color: rgba(255, 255, 255, 0.614); opacity: 90%; border-radius: 20px; margin-bottom: 40px; margin-top: 40px;"><div class="col">
 <h1 style="padding-top: 30px; text-align: center; color: rgb(35, 35, 86);"><b>SafeHaste Fare Guide</b></h1>
 <p style="color: #797979; text-align: center;">Please take note that our service is available to <b>MRT Line 3 only.</b></p>
 
 <img src="mrt line 3.jpg" style="width: 180px; height: 170px; margin-right: auto; margin-left: auto; display: block;">
 
-<h3 style="color: rgb(35, 35, 86);">Pick-up Location:</h3> <!--Uses a dropdown feature instead of an input feature-->
+<br><br>
+
+<h3 style="color: rgb(35, 35, 86); text-align: center;">Pick-up Location:</h3> <!--Uses a dropdown feature instead of an input feature-->
 <select class="form-control mb-3" id="Pickup">
     <option value="">Select Station</option>
     <option value="0">North Avenue</option>
@@ -79,7 +82,7 @@
     <option value="12">Taft Avenue</option>
 </select>
 
-<h3 style="color: rgb(35, 35, 86);">Drop-off Location:</h3>
+<h3 style="color: rgb(35, 35, 86); text-align: center;">Drop-off Location:</h3>
 <select class="form-control mb-3" id="Dropoff">
     <option value="">Select Station</option>
     <option value="0">North Avenue</option>
@@ -166,8 +169,4 @@ function calculateFare(type) {
 </body>
 
 </html>
-
-
-
-
 
