@@ -86,7 +86,10 @@
             </button>
 
            <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav gap-4" style="margin-left: 30px; margin-top: 30px;">
+
+            <a class="navbar-brand" href="#"><img src="SafeHasteLogo.png" width="55px" height="55px" style="border-radius: 30px; margin-left: 10px; margin-top: 30px;"></a>
+
+                <ul class="navbar-nav gap-4" style="margin-left: 10px; margin-top: 30px;">
 
                      <li class="nav-item"><a class="nav-link" href="index.html" style="color: rgb(255, 255,  255);"><b>Home</b></a></li>
 
@@ -102,93 +105,99 @@
     </nav>
 
 
-<div class="box">
-    <div class="left">
-      <h2>Don't have an account?</h2>
-<p>Log in now to book your ride or manage your transportation needs easily.</p>
-    </div>
+    <div class="box">
+        <div class="left">
+            <h2>Don't have an account?</h2>
+            <p>Log in now to book your ride or manage your transportation needs easily.</p>
+        </div>
 
-    <div class="right">
-    <h1 style="text-align: center;">Registration Form</h1>
-    <details class="onclick" style="margin-left: 50px; font-size: 15px;">
-            <summary>Instruction</summary>
-            <p id="instruct"></p>
-        </details>
-    <script>
-document.getElementById("instruct").innerHTML = "Fill out the form below to be able to register for an account. Make sure to input the correct information to avoid any problems.";
-</script>
+        <div class="right">
+            <h1 style="text-align: center;">Registration Form</h1>
+            <details class="onclick" style="margin-left: 50px; font-size: 15px;">
+                <summary>Instruction</summary>
+                <p id="instruct"></p>
+            </details>
 
- <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 15px;">
-     <td><img width="100px" style="margin-left: 20px;">
-                <td><img style="width:100px; height:100px; margin-left: 20px;"src="https://i.pinimg.com/236x/1d/ec/e2/1dece2c8357bdd7cee3b15036344faf5.jpg" alt="anony" class="rounded-circle"></td>
-    <input type="file" class="form-control" style="width: 200px;">
-    <button type="submit" class="btn btn-primary">
-        Upload Photo
-    </button>
-  </div>
-<br>
-    <div class="row">
-        <div class="col">
-            <form>
-                <div>
-                <div class="row">
-                <div class="col-md-6">
-                   <label for="FN" style="padding-bottom: 6px;">First Name</label>
-                    <input class="form-control mb-3" placeholder="Input First Name..." id="FN">
+            <script>
+             document.getElementById("instruct").innerHTML = "Fill out the form below to be able to register for an account. Make sure to input the correct information to avoid any problems.";
+            </script>
+
+            <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 15px;">
+                <td><img width="100px" style="margin-left: 20px;">
+                    <td><img style="width:100px; height:100px; margin-left: 20px;"src="https://i.pinimg.com/236x/1d/ec/e2/1dece2c8357bdd7cee3b15036344faf5.jpg" alt="anony" class="rounded-circle"></td>
+                    <input type="file" class="form-control" style="width: 200px;">
+                    <button type="submit" class="btn btn-primary">Upload Photo</button>
+                </td>
+            </div>
+
+        <br>
+
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <div>
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                <label for="FN" style="padding-bottom: 6px;">First Name</label>
+                                    <input class="form-control mb-3" placeholder="Input First Name..." id="FN" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                <label for="LN" style="padding-bottom: 6px;">Last Name</label>
+                                    <input class="form-control mb-3" placeholder="Input Last Name..." id="LN" required>
+                                </div>
+
+                                <br>
+
+                                <div>
+                                <label for="Email" style="padding-bottom: 6px;">Email</label>
+                                    <input class="form-control mb-3" placeholder="Input Email..." id="Email" required>
+                                </div>
+
+                                <br>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                <label for="number" style="padding-bottom: 6px;">Contact Number</label>
+                                    <input class="form-control mb-3" placeholder="Input Contact number..." id="number" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="age" style="padding-bottom: 6px;">Age</label>
+                                    <input class="form-control mb-3" placeholder="Input Age..." id="age" name="age" min="1" max="100" required>
+                                </div>
+
+                                <br>
+
+                                <div>
+                                <label for="pass" style="padding-bottom: 6px;">Password</label>
+                                    <input class="form-control mb-3" placeholder="Input Password..." id="pass" required>
+                                </div>
+                                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" style="margin-left: 3px;"> I agree to the terms and conditions
+                                    </label>
+                                    
+                                    <br><br>
+                                
+                                    <a href="confirmation.html" type="button" class="btn btn-primary btn-block">Register</a>
+                                    <button type="submit" class="btn btn-primary" onclick="window.location.reload()"; >Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-md-6">
-                   <label for="LN" style="padding-bottom: 6px;">Last Name</label>
-                    <input class="form-control mb-3" placeholder="Input Last Name..." id="LN">
-                </div>
-                <br> 
-                 <div>
-                   <label for="Email" style="padding-bottom: 6px;">Email</label>
-                    <input class="form-control mb-3" placeholder="Input Email..." id="Email">
-                </div>
-                <br>
-                <div class="row">
-                <div class="col-md-6">
-                   <label for="number" style="padding-bottom: 6px;">Contact Number</label>
-                    <input class="form-control mb-3" placeholder="Input Contact number..." id="number">
-                    </div>
-                <div class="col-md-6">
-                    <label for="age" style="padding-bottom: 6px;">Age</label>
-                    <input class="form-control mb-3" placeholder="Input Age..." id="age">
-                    </div>
-                    <br>
-                 <div>
-                   <label for="pass" style="padding-bottom: 6px;">Password</label>
-                    <input class="form-control mb-3" placeholder="Input Password..." id="pass">
-                </div>
-                <div class="form-check">
-                <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" style="margin-left: 3px;"> I agree to the terms and conditions
-                </label>
-					
-                <br><br>
-                
-
-				<button type="submit" class="btn btn-primary" href="confirmation.html">Register</button>
-
-                <button type="button" class="btn btn-primary" onclick="window.location.reload()"; >Cancel</button>
-            </form>
-
-            <br><br>
+            </div>
         </div>
     </div>
-    </div>
-</div>
 
 
-             <div class="footer">
+    <div class="footer">
 	    <p>9-EMERALD | Benitez, Cruz, Ramos | source.com</p>
     </div>
-
-
-
-               
-        
-
 
 </body>
 </html>
